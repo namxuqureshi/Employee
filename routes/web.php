@@ -33,4 +33,8 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 });
-
+Route::any('delete/{id}','Shop\\ShopController@delete');
+Route::any('add/{id}','Shop\\ShopController@add');
+Route::post('/addProduct/{id}','Shop\\ShopController@added');
+Route::resource('shop', 'Shop\\ShopController');
+Route::resource('product', 'Product\\ProductController');

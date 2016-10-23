@@ -12,14 +12,14 @@ class EmployeeSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker\Factory::create();
-        for ($i = 0; $i < 100; $i++) {
-            $temp = Employee::create(array(
-                'name' => $faker->name,
-                'age' => $faker->randomDigit,
-                'startDate' => $faker->date('Y-m-d','now'),
-                'departmentId'=>mt_rand(4,100)
-            ));
-        }
+//        $faker = Faker\Factory::create();
+//        for ($i = 0; $i < 100; $i++) {
+//            $temp = Employee::create(array(
+//                'name' => $faker->name,
+//                'age' => $faker->randomDigit,
+//                'startDate' => $faker->date('Y-m-d','now'),
+//                'departmentId'=>mt_rand(4,100)
+//            ));
+//        }
     }
 }

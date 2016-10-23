@@ -34,9 +34,10 @@ class Department extends Model
     {
         return $this->hasMany('app\Employee', 'departmentId');
     }
+
     public function admins()
     {
-        return $this->hasMany('app\Admin', 'dept_id');
+        return $this->hasOne('app\Admin', 'dept_id');
     }
 
 }
